@@ -15,7 +15,7 @@ export default function Home() {
     <main className="bg-gray-100 min-h-screen">
     <Header />
     <TopCards />
-    <div className='p-4 grid md:grid-cols-3 gap-4'>
+    <div className='p-4 grid grid-cols-1 md:grid-cols-3 gap-4'>
       <BarCharts />
       <RecentOrder />
     </div>
