@@ -37,6 +37,10 @@ const Sidebar = ({children}) => {
                   </div>
                 </Link>
             </div>
+        
+            <div className='cursor-pointer rounded-lg w-[50px] m-auto'>
+                      <img src="https://flxt.tmsimg.com/assets/216291_v9_bb.jpg" alt="" className='rounded-lg'  />
+                  </div>     
         </div>
         <main className='ml-20 w-full'>{children}</main>
         
