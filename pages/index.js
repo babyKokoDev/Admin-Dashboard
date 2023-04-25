@@ -4,9 +4,13 @@ import RecentOrder from '@/components/RecentOrder'
 import TopCards from '@/components/TopCards'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useSession, signIn, signOut } from "next-auth/react"
+import LoginPage from './LoginPage'
 
 
 export default function Home() {
+  const { data: session } = useSession()
+  if (session) {
   return (
     <>
     <Head>
@@ -22,4 +26,12 @@ export default function Home() {
     </main>
     </>
   )
+  }
+
+  return (
+    <>
+        <LoginPage />
+    </>
+  )
+
 }
